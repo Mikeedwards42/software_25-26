@@ -22,7 +22,7 @@ Console.WriteLine();DateTime.Now.ToShortDateString();
 Console.WriteLine($"to: {name2}");
 Console.WriteLine($"Dear {name2}");
 Console.WriteLine($"subject:{subject}");
-Console.WriteLine($"I am writing to you today regarding the {phase}{subject} that we discussed");
+Console.WriteLine($"I am writing to you today regarding the {phase}of{subject} that we discussed");
 Console.WriteLine("I wanted to provide a quick update on its progress.");
 Console.WriteLine($"We anticipate completing the initial phase by{comp}");
 Console.WriteLine("Please let me know if you have any questions or require further information.");
