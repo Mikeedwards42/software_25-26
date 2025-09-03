@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            pictureBox1 = new PictureBox();
             Rcalc = new Button();
             RP = new TextBox();
             RA = new TextBox();
@@ -41,41 +42,58 @@
             lb2 = new Label();
             lb = new Label();
             tabPage2 = new TabPage();
-            pictureBox1 = new PictureBox();
+            TS2 = new TextBox();
+            label6 = new Label();
+            TS1 = new TextBox();
+            label5 = new Label();
             pictureBox2 = new PictureBox();
             button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            TP = new TextBox();
+            TA = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            TH = new TextBox();
+            TB = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
-            textBox7 = new TextBox();
-            label7 = new Label();
             tabPage3 = new TabPage();
-            tabPage4 = new TabPage();
-            tabPage5 = new TabPage();
             pictureBox3 = new PictureBox();
             button2 = new Button();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
+            SP = new TextBox();
+            SA = new TextBox();
             label8 = new Label();
             label9 = new Label();
             SS = new TextBox();
             label11 = new Label();
+            tabPage4 = new TabPage();
+            pictureBox4 = new PictureBox();
+            button3 = new Button();
+            CC = new TextBox();
+            CA = new TextBox();
+            label12 = new Label();
+            label13 = new Label();
+            CR = new TextBox();
+            C = new Label();
+            tabPage5 = new TabPage();
+            pictureBox5 = new PictureBox();
+            button4 = new Button();
+            CV = new TextBox();
+            CSA = new TextBox();
+            label14 = new Label();
+            label15 = new Label();
+            CS = new TextBox();
+            label16 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -110,6 +128,15 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Rectangle";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(439, 185);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(248, 161);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
             // 
             // Rcalc
             // 
@@ -187,20 +214,18 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(textBox7);
-            tabPage2.Controls.Add(label7);
-            tabPage2.Controls.Add(textBox5);
-            tabPage2.Controls.Add(textBox6);
-            tabPage2.Controls.Add(label5);
+            tabPage2.Controls.Add(TS2);
             tabPage2.Controls.Add(label6);
+            tabPage2.Controls.Add(TS1);
+            tabPage2.Controls.Add(label5);
             tabPage2.Controls.Add(pictureBox2);
             tabPage2.Controls.Add(button1);
-            tabPage2.Controls.Add(textBox1);
-            tabPage2.Controls.Add(textBox2);
+            tabPage2.Controls.Add(TP);
+            tabPage2.Controls.Add(TA);
             tabPage2.Controls.Add(label1);
             tabPage2.Controls.Add(label2);
-            tabPage2.Controls.Add(textBox3);
-            tabPage2.Controls.Add(textBox4);
+            tabPage2.Controls.Add(TH);
+            tabPage2.Controls.Add(TB);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(label4);
             tabPage2.Location = new Point(4, 29);
@@ -212,14 +237,37 @@
             tabPage2.UseVisualStyleBackColor = true;
             tabPage2.Click += tabPage2_Click;
             // 
-            // pictureBox1
+            // TS2
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(439, 185);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(248, 161);
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
+            TS2.Location = new Point(129, 178);
+            TS2.Name = "TS2";
+            TS2.Size = new Size(125, 27);
+            TS2.TabIndex = 23;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(77, 185);
+            label6.Name = "label6";
+            label6.Size = new Size(40, 20);
+            label6.TabIndex = 22;
+            label6.Text = "side ";
+            // 
+            // TS1
+            // 
+            TS1.Location = new Point(129, 145);
+            TS1.Name = "TS1";
+            TS1.Size = new Size(125, 27);
+            TS1.TabIndex = 21;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(77, 148);
+            label5.Name = "label5";
+            label5.Size = new Size(40, 20);
+            label5.TabIndex = 20;
+            label5.Text = "side ";
             // 
             // pictureBox2
             // 
@@ -238,20 +286,21 @@
             button1.TabIndex = 18;
             button1.Text = "calculate";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // textBox1
+            // TP
             // 
-            textBox1.Location = new Point(409, 99);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 17;
+            TP.Location = new Point(409, 99);
+            TP.Name = "TP";
+            TP.Size = new Size(125, 27);
+            TP.TabIndex = 17;
             // 
-            // textBox2
+            // TA
             // 
-            textBox2.Location = new Point(409, 38);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 16;
+            TA.Location = new Point(409, 38);
+            TA.Name = "TA";
+            TA.Size = new Size(125, 27);
+            TA.TabIndex = 16;
             // 
             // label1
             // 
@@ -271,24 +320,24 @@
             label2.TabIndex = 14;
             label2.Text = "Area";
             // 
-            // textBox3
+            // TH
             // 
-            textBox3.Location = new Point(129, 92);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 13;
+            TH.Location = new Point(129, 56);
+            TH.Name = "TH";
+            TH.Size = new Size(125, 27);
+            TH.TabIndex = 13;
             // 
-            // textBox4
+            // TB
             // 
-            textBox4.Location = new Point(129, 45);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 12;
+            TB.Location = new Point(129, 99);
+            TB.Name = "TB";
+            TB.Size = new Size(125, 27);
+            TB.TabIndex = 12;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(77, 95);
+            label3.Location = new Point(77, 59);
             label3.Name = "label3";
             label3.Size = new Size(55, 20);
             label3.TabIndex = 11;
@@ -297,66 +346,18 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(72, 48);
+            label4.Location = new Point(72, 102);
             label4.Name = "label4";
             label4.Size = new Size(40, 20);
             label4.TabIndex = 10;
             label4.Text = "base";
             // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(129, 225);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 27);
-            textBox5.TabIndex = 23;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(129, 178);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
-            textBox6.TabIndex = 22;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(72, 225);
-            label5.Name = "label5";
-            label5.Size = new Size(48, 20);
-            label5.TabIndex = 21;
-            label5.Text = "side 2";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(72, 181);
-            label6.Name = "label6";
-            label6.Size = new Size(48, 20);
-            label6.TabIndex = 20;
-            label6.Text = "side 1";
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(129, 258);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 27);
-            textBox7.TabIndex = 25;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(77, 261);
-            label7.Name = "label7";
-            label7.Size = new Size(48, 20);
-            label7.TabIndex = 24;
-            label7.Text = "side 3";
-            // 
             // tabPage3
             // 
             tabPage3.Controls.Add(pictureBox3);
             tabPage3.Controls.Add(button2);
-            tabPage3.Controls.Add(textBox8);
-            tabPage3.Controls.Add(textBox9);
+            tabPage3.Controls.Add(SP);
+            tabPage3.Controls.Add(SA);
             tabPage3.Controls.Add(label8);
             tabPage3.Controls.Add(label9);
             tabPage3.Controls.Add(SS);
@@ -369,30 +370,13 @@
             tabPage3.Text = "square ";
             tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
-            // 
-            tabPage4.Location = new Point(4, 29);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(768, 394);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "circle";
-            tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            tabPage5.Location = new Point(4, 29);
-            tabPage5.Name = "tabPage5";
-            tabPage5.Size = new Size(768, 394);
-            tabPage5.TabIndex = 4;
-            tabPage5.Text = "cube";
-            tabPage5.UseVisualStyleBackColor = true;
-            // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(448, 196);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(248, 161);
+            pictureBox3.Size = new Size(262, 198);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 19;
             pictureBox3.TabStop = false;
             // 
@@ -404,20 +388,21 @@
             button2.TabIndex = 18;
             button2.Text = "calculate";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // textBox8
+            // SP
             // 
-            textBox8.Location = new Point(409, 99);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(125, 27);
-            textBox8.TabIndex = 17;
+            SP.Location = new Point(409, 99);
+            SP.Name = "SP";
+            SP.Size = new Size(125, 27);
+            SP.TabIndex = 17;
             // 
-            // textBox9
+            // SA
             // 
-            textBox9.Location = new Point(409, 38);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(125, 27);
-            textBox9.TabIndex = 16;
+            SA.Location = new Point(409, 38);
+            SA.Name = "SA";
+            SA.Size = new Size(125, 27);
+            SA.TabIndex = 16;
             // 
             // label8
             // 
@@ -453,6 +438,174 @@
             label11.TabIndex = 10;
             label11.Text = "Side";
             // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(pictureBox4);
+            tabPage4.Controls.Add(button3);
+            tabPage4.Controls.Add(CC);
+            tabPage4.Controls.Add(CA);
+            tabPage4.Controls.Add(label12);
+            tabPage4.Controls.Add(label13);
+            tabPage4.Controls.Add(CR);
+            tabPage4.Controls.Add(C);
+            tabPage4.Location = new Point(4, 29);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(768, 394);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "circle";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(422, 142);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(278, 226);
+            pictureBox4.TabIndex = 27;
+            pictureBox4.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(250, 211);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 38);
+            button3.TabIndex = 26;
+            button3.Text = "calculate";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // CC
+            // 
+            CC.Location = new Point(409, 99);
+            CC.Name = "CC";
+            CC.Size = new Size(125, 27);
+            CC.TabIndex = 25;
+            // 
+            // CA
+            // 
+            CA.Location = new Point(409, 38);
+            CA.Name = "CA";
+            CA.Size = new Size(125, 27);
+            CA.TabIndex = 24;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(298, 99);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 20);
+            label12.TabIndex = 23;
+            label12.Text = "circumferense ";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(313, 45);
+            label13.Name = "label13";
+            label13.Size = new Size(40, 20);
+            label13.TabIndex = 22;
+            label13.Text = "Area";
+            // 
+            // CR
+            // 
+            CR.Location = new Point(129, 45);
+            CR.Name = "CR";
+            CR.Size = new Size(125, 27);
+            CR.TabIndex = 21;
+            // 
+            // C
+            // 
+            C.AutoSize = true;
+            C.Location = new Point(72, 48);
+            C.Name = "C";
+            C.Size = new Size(49, 20);
+            C.TabIndex = 20;
+            C.Text = "radius";
+            // 
+            // tabPage5
+            // 
+            tabPage5.Controls.Add(pictureBox5);
+            tabPage5.Controls.Add(button4);
+            tabPage5.Controls.Add(CV);
+            tabPage5.Controls.Add(CSA);
+            tabPage5.Controls.Add(label14);
+            tabPage5.Controls.Add(label15);
+            tabPage5.Controls.Add(CS);
+            tabPage5.Controls.Add(label16);
+            tabPage5.Location = new Point(4, 29);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Size = new Size(768, 394);
+            tabPage5.TabIndex = 4;
+            tabPage5.Text = "cube";
+            tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(453, 160);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(271, 202);
+            pictureBox5.TabIndex = 35;
+            pictureBox5.TabStop = false;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(250, 211);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 38);
+            button4.TabIndex = 34;
+            button4.Text = "calculate";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // CV
+            // 
+            CV.Location = new Point(409, 99);
+            CV.Name = "CV";
+            CV.Size = new Size(125, 27);
+            CV.TabIndex = 33;
+            // 
+            // CSA
+            // 
+            CSA.Location = new Point(409, 38);
+            CSA.Name = "CSA";
+            CSA.Size = new Size(125, 27);
+            CSA.TabIndex = 32;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(323, 99);
+            label14.Name = "label14";
+            label14.Size = new Size(62, 20);
+            label14.TabIndex = 31;
+            label14.Text = "volume ";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(313, 45);
+            label15.Name = "label15";
+            label15.Size = new Size(93, 20);
+            label15.TabIndex = 30;
+            label15.Text = "surface area ";
+            // 
+            // CS
+            // 
+            CS.Location = new Point(129, 45);
+            CS.Name = "CS";
+            CS.Size = new Size(125, 27);
+            CS.TabIndex = 29;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(72, 48);
+            label16.Name = "label16";
+            label16.Size = new Size(40, 20);
+            label16.TabIndex = 28;
+            label16.Text = "side ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -464,13 +617,19 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -491,26 +650,24 @@
         private PictureBox pictureBox1;
         private TextBox textBox7;
         private Label label7;
-        private TextBox textBox5;
         private TextBox textBox6;
-        private Label label5;
         private Label label6;
         private PictureBox pictureBox2;
         private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox TP;
+        private TextBox TA;
         private Label label1;
         private Label label2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox TH;
+        private TextBox TB;
         private Label label3;
         private Label label4;
         private TabPage tabPage3;
         private TabPage tabPage4;
         private PictureBox pictureBox3;
         private Button button2;
-        private TextBox textBox8;
-        private TextBox textBox9;
+        private TextBox SP;
+        private TextBox SA;
         private Label label8;
         private Label label9;
         private TextBox textBox10;
@@ -518,5 +675,24 @@
         private Label label10;
         private Label label11;
         private TabPage tabPage5;
+        private TextBox TS1;
+        private Label label5;
+        private PictureBox pictureBox4;
+        private Button button3;
+        private TextBox CC;
+        private TextBox CA;
+        private Label label12;
+        private Label label13;
+        private TextBox CR;
+        private Label C;
+        private PictureBox pictureBox5;
+        private Button button4;
+        private TextBox CV;
+        private TextBox CSA;
+        private Label label14;
+        private Label label15;
+        private TextBox CS;
+        private Label label16;
+        private TextBox TS2;
     }
 }
